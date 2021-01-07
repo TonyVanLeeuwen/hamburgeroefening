@@ -8,7 +8,6 @@
     position: relative;
     width: var(--menu-bar-width);
     height: var(--menu-bar-height);
-    margin: 100px;
 }
 
 #menu::before,
@@ -32,7 +31,20 @@
 }
 
 #container {
+    padding : 30px;
     position: absolute;
     content: "";
     border: solid aqua;
+}
+
+#container:hover #menu{
+    background-color: white;
+}
+
+#container:hover #menu::after{
+    transform: rotate(160deg);
+}
+
+#container:hover #menu::before{
+    transform: rotate(200deg);
 }
