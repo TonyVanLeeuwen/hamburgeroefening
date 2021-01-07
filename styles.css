@@ -31,7 +31,8 @@
     top: 20px;
 }
 
-.container {
-    display: block;
-    border: aqua;
+#container {
+    position: absolute;
+    content: "";
+    border: solid aqua;
 }
