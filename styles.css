@@ -20,6 +20,12 @@
     position: absolute;
 }
 
+#menu,
+#menu::before,
+#menu::after {
+    transition: 200ms ease-in-out;
+}
+
 #menu::before {
     left: 0;
     top: -20px;
@@ -31,20 +37,22 @@
 }
 
 #container {
-    padding : 30px;
+    padding: 30px;
     position: absolute;
     content: "";
     border: solid aqua;
 }
 
-#container:hover #menu{
+#container:hover #menu {
     background-color: white;
 }
 
-#container:hover #menu::after{
-    transform: rotate(160deg);
+#container:hover #menu::after {
+    transform: rotate(-45deg);
+    top: 0;
 }
 
-#container:hover #menu::before{
-    transform: rotate(200deg);
+#container:hover #menu::before {
+    transform: rotate(45deg);
+    top: 0;
 }
