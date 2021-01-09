@@ -40,7 +40,6 @@
     padding: 30px;
     position: absolute;
     content: "";
-    border: solid aqua;
 }
 
 #container:hover #menu {
